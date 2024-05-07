@@ -1,4 +1,4 @@
-# CodeInPlace2024_Stanford_University-Projects
+# CodeInPlace2024_Stanford_University-Karel_Python_Projects
 
 # [Project-1: Karel (Python Programming)- Archway Project](https://codeinplace.stanford.edu/cip4/share/uRDsiYVLeckoTvWA2Zaz)
 
@@ -215,6 +215,101 @@ if __name__ == '__main__':
     main()
 
 ![Fill Karel](https://github.com/SHEETAL0812/codeinplace2024_stanford_university/assets/128026212/e032cb13-bbc0-43ff-a30c-5ffd3e2bcba2)
+
+# [Project-5: Karel (Python Programming)-Warmup Karel Project](https://codeinplace.stanford.edu/cip4/share/rkb8AXL539ruRgPNsOZb)
+
+* below is the karel python programming coding-
+
+from karel.stanfordkarel import *
+
+# File: warmup.py
+# -----------------------------
+# The warmup program defines a "main"
+# function which currently just has one
+# Command. Add two more commands to make karel: move(),
+# pick_beeper(), move()
+def main():
+    move()
+    pick_beeper()
+    move()
+   
+if __name__ == '__main__':
+    main()
+
+![Warmup Karel-CIP2024](https://github.com/SHEETAL0812/codeinplace2024_stanford_university/assets/128026212/a99fc57a-eb64-466b-98fa-e58e79cd77af)
+
+# [Project-6: Karel (Python Programming)-Piles Karel Project](https://codeinplace.stanford.edu/cip4/share/bRMM6VTtiSmcTN3IZA2k)
+
+* below is the karel python programming coding-
+
+  from karel.stanfordkarel import *
+
+# File: piles.py
+# -----------------------------
+# The warmup program defines a "main"
+# function which should make Karel
+# pick up all the beepers in the world.
+def main():
+    move()
+    # your code here
+    while front_is_clear():
+        pick_10_beeper()
+        move()
+        
+        
+def pick_10_beeper():
+    for i in range(10):
+        if beepers_present():
+            pick_beeper()
+    
+           
+# don't edit these next two lines
+# they tell python to run your main function
+if __name__ == '__main__':
+    main()
+
+![PILES KAREL](https://github.com/SHEETAL0812/codeinplace2024_stanford_university/assets/128026212/b0de7ae6-1712-4a41-be4f-8d9ab20af06e)
+
+# [Project-7: Karel (Python Programming)-2024 Karel Project]
+
+* below is the karel python programming coding-
+
+from karel.stanfordkarel import *
+
+"""
+When you finish writing this file, Karel should be able to 
+place 20 beepers, then 24 beepers, and end facing East to 
+the right of the 24 beepers.
+"""
+
+def main():
+    """
+    You should write your code to make Karel do its task in
+    this function. Make sure to delete the 'pass' line before
+    starting to write your own code. You should also delete this
+    comment and replace it with a better, more descriptive one.
+    """
+    if front_is_clear():
+        put_20_beeper()
+        move()
+    
+    if front_is_clear():
+        put_24_beeper()
+        move()
+          
+def put_20_beeper():
+    for i in range(20):
+        put_beeper()
+        
+def put_24_beeper():
+    for i in range(24):
+        put_beeper()
+    
+if __name__ == '__main__':
+    main()
+
+![Screenshot (166)](https://github.com/SHEETAL0812/codeinplace2024_stanford_university/assets/128026212/e0e4d7f0-71ec-40e8-86c2-da0f3cb7517c)
+
 
 
 
